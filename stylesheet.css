@@ -1,0 +1,137 @@
+html{
+    font-family: "helvetica neue", sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+    width:100vw;
+    height:100vh;
+    margin: 0;
+    padding:0;
+    background-color: #333333;
+}
+footer{
+    text-align: center;
+    color:#36AF57;
+}
+.content {
+    width:100%;
+    margin:auto;
+    overflow: hidden;
+    display:flex;
+}
+.wrapper {
+    width:80%;
+    margin:auto;
+    flex:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAVBAR AND HEADER */
+
+.navbar {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    min-height:70px;
+    padding-top:20px;
+}
+.nav_menu{
+    margin:0 30px 0 0;
+}
+.nav_menu .active{
+    color:#36AF57;
+}
+.nav_menu a{
+    text-decoration: none;
+    color:gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+.nav_menu a:hover{
+    color:lightgray;
+}
+label {
+    margin:0 40px 0 0;
+    font-size:26px;
+    line-height: 70px;
+    display:none;
+}
+#toggle{
+    display:none;
+}
+@media only screen and (max-width: 600px){
+    label{
+        display:block;
+        cursor:pointer;
+    }
+    .nav_menu {
+        text-align: center;
+        width:100%;
+        display:none;
+    }
+    .nav_menu a{
+        display:block;
+        border-bottom:1px solid #EAEAEB;
+        margin:0;
+    }
+    #toggle:checked + .nav_menu{
+        display:block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* HOMEPAGE */
+
+#showcase {
+    min-height:400px;
+    width:100%;
+    background: url("images/showcase.jpg") center no-repeat;
+    text-align: center;
+    color:white;
+}
+
+#boxes {
+    display:flex;
+    flex-direction: row;
+    width:80%;
+    max-height:300px;
+    margin: 20px auto;
+}
+#boxes .box{
+    flex:1;
+    text-align: center;
+}
+#boxes .box img{
+    max-width: 80%;
+    max-height: 80%;
+    margin:auto;
+}
+
+/*
+
+IMAGE CREDIT:
+    HOMEPAGE:
+        JAVASCRIPT SHIELD: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1000px-Javascript-shield.svg.png
+        PYTHON LOGO: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1000px-Python.svg.png
+        RASPBERRY PI LOGO: https://upload.wikimedia.org/wikipedia/commons/c/c2/RPi-Logo-SCREEN.png
+        SHOWCASE: https://www.needpix.com/photo/1572857/code-javascript-programming-source-code-program-null-one-design-software
+ */
